@@ -39,3 +39,12 @@ function setButtonText(heart, button) {
     );
   }
 }
+
+
+document.getElementById('saveButton').addEventListener('click', function() {
+  document.getElementById('dialog').showModal();
+});
+  
+document.getElementById('okButton').addEventListener('click', function() {
+  document.getElementById('dialog').close();
+});

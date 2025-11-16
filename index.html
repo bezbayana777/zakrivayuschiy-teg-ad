@@ -465,9 +465,8 @@
 
     <footer class="center save_button-wrapper">
       <button
-        class="button save_button"
+        class="button save_button" id="saveButton"
         type="button"
-        onclick="window['dialog'].showModal()"
         aria-controls="dialog"
       >
         <svg class="floppy">
@@ -486,8 +485,9 @@
       </div>
       <button
         type="button"
-        class="button save-button modal__button"
-        onclick="window['dialog'].close()"
+        class="button save-button modal__button" 
+        id="okButton"
+        
       >
         <span class="button__text">Ок</span>
       </button>
