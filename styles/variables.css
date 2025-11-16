@@ -15,7 +15,7 @@
   --title-font-size: 65px;
 
 
-  --card-container-gap: 50px;  /* change it in the mobile version to 52px*/
+  --card-container-gap: 49px;  /* change it in the mobile version to 52px*/
 
 
   --page-background: 
@@ -34,4 +34,7 @@
       #e7e7e7 0.01%,
       #1a1a1a
     );
+
+    --contour-color: #000;
+    --animation-fill-color: #f00;
 }
