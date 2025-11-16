@@ -13,7 +13,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--Inter-Variable-font);
+  font-family: var(--Inter-Variable-font, Arial, sans-serif);
   font-variation-settings: "wght" var(--font-weight-card-text);
   margin-top: 100px;
   font-size: var(--main-font-size);
@@ -68,11 +68,14 @@
   color: var(--main-background-color);
   mix-blend-mode: difference;
   z-index: 2;
+  font-family: var(--PressStart2P-font, 'Courier New', monospace);
+  font-size: 14px;
+  line-height: 90%;
 }
 
 .header__text-container {
   background-color: var(--main-background-color);
-  font-family: var(--PressStart2P-font);
+  font-family: var(--PressStart2P-font, 'Courier New', monospace);
   display: flex;
   flex-direction: column;
   height: 368px;
@@ -126,7 +129,7 @@
 }
 
 .image-wrapper_label {
-  font-family: var(--PressStart2P-font);
+  font-family: var(--PressStart2P-font, 'Courier New', monospace);
   font-size: 14px;
   opacity: 0.5;
   position: absolute;
@@ -293,12 +296,6 @@
   border: 2px solid var(--main-text-color);
 }
 
-.button__text {
-  font-family: var(--PressStart2P-font);
-  font-size: 14px;
-  line-height: 90%;
-}
-
 .save_button-wrapper {
   margin-top: 48px;
   width: 335px;
@@ -336,7 +333,7 @@
 }
 
 .modal__title {
-  font-family: var(--PressStart2P-font);
+  font-family: var(--PressStart2P-font, 'Courier New', monospace);
   font-size: 14px;
   line-height: 150%;
   font-variation-settings: "wght" 400;
@@ -348,11 +345,6 @@
   gap: 20px;
   align-items: center;
   justify-content: space-between;
-}
-
-.modal[open] .modal__button .button__text {
-  padding-top: 12.5px;
-  padding-bottom: 12.5px;
 }
 
 .modal[open] .floppy {

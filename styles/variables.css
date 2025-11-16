@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
   --Inter-Variable-font: "Inter-Variable", Arial, sans-serif;
-  --PressStart2P-font: "PressStart2P-Regular", "Courier New", monospace;
+  --PressStart2P-font: "PressStart2P", "Courier New", monospace;
   --font-weight-card-text: 400;
   --font-weight-card-title: 700;
   --main-text-color: #000;
