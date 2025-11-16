@@ -13,23 +13,19 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-
-  font-family: var(--Inter-Variable-font), sans-serif;
-  font-variation-settings: 'wght' var(--font-weight-card-text);
+  font-family: var(--Inter-Variable-font);
+  font-variation-settings: "wght" var(--font-weight-card-text);
   margin-top: 100px;
   font-size: var(--main-font-size);
-
   background-attachment: fixed;
   background-image: var(--page-background);
   background-size: cover;
   background-position: center;
-
 }
 
 .center {
   width: var(--header-width);
   margin: auto;
-  /* border: 2px solid var(--main-text-color); */
 }
 
 .button:focus {
@@ -39,11 +35,6 @@
 .button:hover {
   box-shadow: 2px 2px 0 var(--main-text-color);
   transition: box-shadow 0.3s ease;
-}
-
-
-.header {
-
 }
 
 .header__text-container {
@@ -59,7 +50,6 @@
   border: 2px solid var(--main-text-color);
 }
 .header__text-container-title {
-  /* text-transform: uppercase; */
   font-size: var(--title-font-size);
 }
 
@@ -68,13 +58,9 @@
   font-size: 23px;
 }
 
-
-
-
 .content {
   margin-top: 100px;
 }
-
 
 .card-container {
   display: flex;
@@ -89,24 +75,22 @@
 }
 
 .card-container_item-title {
-  font-variation-settings: 'wght' 700;
+  font-variation-settings: "wght" 700;
   font-style: bold;
   padding: 3px 24px 3px 10px;
   font-size: var(--main-font-size);
 }
-
 
 .image-wrapper {
   position: relative;
   /* width: clamp(375px, 100%, 696px); */
 }
 
-.image-wrapper img{
+.image-wrapper img {
   object-fit: cover;
   width: 100%;
   object-position: center;
 }
-
 
 .image-wrapper_label {
   font-family: var(--PressStart2P-font);
@@ -116,23 +100,23 @@
   top: 25px;
   right: 25px;
   mix-blend-mode: hard-light;
-  text-shadow:
-    -1px 0 var(--main-background-color, #fff), 
-    0 1px var(--main-background-color, #fff), 
-    1px 0 var(--main-background-color, #fff), 
+  text-shadow: -1px 0 var(--main-background-color, #fff),
+    0 1px var(--main-background-color, #fff),
+    1px 0 var(--main-background-color, #fff),
     0 -1px var(--main-background-color, #fff);
   z-index: 1;
 }
 
-@supports ((text-stroke: 1px  var(--main-background-color)) or (-webkit-text-stroke: 1px var(--main-background-color))) {
+@supports (
+  (text-stroke: 1px var(--main-background-color)) or
+    (-webkit-text-stroke: 1px var(--main-background-color))
+) {
   .image-wrapper_label {
     text-shadow: none;
     text-stroke: 1px var(--main-background-color);
     -webkit-text-stroke: 1px var(--main-background-color);
   }
 }
-
-
 
 .bus--grayscale {
   filter: grayscale(50%);
@@ -169,7 +153,6 @@
   padding: 25px 25px 0 25px;
 }
 
-
 .card__button-wrapper {
   display: flex;
   gap: 5px;
@@ -178,13 +161,10 @@
   margin-top: 25px;
   margin-right: 25px;
   margin-bottom: 25px;
-
 }
 .card__icon-button {
   padding: 9px 0 0 0;
 }
-
-
 
 .like-icon {
   width: 39px;
@@ -232,7 +212,6 @@
   transition-delay: 0s;
 }
 
-
 .like-icon:active .core {
   fill: var(--animation-fill-color);
   transition-delay: 0s;
@@ -242,7 +221,6 @@
   fill: var(--animation-fill-color);
   transition-delay: 0.05s;
 }
-
 
 .like-icon.is-liked .core {
   fill: var(--animation-fill-color);
@@ -276,8 +254,6 @@
   transition: fill 0.1s linear;
 }
 
-
-
 .card__like-button {
   width: 130px;
   height: 38px;
@@ -289,9 +265,6 @@
   font-size: 14px;
   line-height: 90%;
 }
-
-
-
 
 .save_button-wrapper {
   margin-top: 48px;
@@ -312,13 +285,11 @@
   padding-right: 21px;
   font-size: 14px;
   text-wrap: nowrap;
-
 }
 .floppy {
   width: 21px;
   height: 21px;
 }
-
 
 .modal[open] {
   width: 353px;
@@ -336,10 +307,9 @@
   font-family: var(--PressStart2P-font);
   font-size: 14px;
   line-height: 150%;
-  font-variation-settings: 'wght' 400;
+  font-variation-settings: "wght" 400;
   text-transform: uppercase;
 }
-
 
 .dialog-text-wrapper {
   display: flex;
@@ -352,8 +322,3 @@
   width: 39px;
   height: 39px;
 }
-
-/* .button__text {
-  margin: 30px;
-} */
-
