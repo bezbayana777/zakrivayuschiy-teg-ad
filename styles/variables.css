@@ -11,8 +11,8 @@
   --main-background-color: #fff;
 
 
-  --header-width: clamp(375px, 100%, 696px);
-  --title-font-size: 65px;
+  --header-width: clamp(min(100%, 375px), 50vw, 700px);
+  --title-font-size: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem);;
 
 
   --card-container-gap: 49px;  /* change it in the mobile version to 52px*/

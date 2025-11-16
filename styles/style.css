@@ -49,13 +49,14 @@
   gap: 20px;
   border: 2px solid var(--main-text-color);
 }
+
 .header__text-container-title {
   font-size: var(--title-font-size);
 }
 
 .header__text-container-subtitle {
   text-transform: uppercase;
-  font-size: 23px;
+  font-size: clamp(0.875rem, 0.676rem + 0.85vw, 1.4375rem);
 }
 
 .content {
@@ -83,7 +84,6 @@
 
 .image-wrapper {
   position: relative;
-  /* width: clamp(375px, 100%, 696px); */
 }
 
 .image-wrapper img {
@@ -293,7 +293,6 @@
 
 .modal[open] {
   width: 353px;
-  height: 191px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -321,4 +320,8 @@
 .modal[open] .floppy {
   width: 39px;
   height: 39px;
+}
+
+.modal__button {
+  border: 2px solid var(--main-text-color);
 }
